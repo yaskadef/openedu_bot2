@@ -6,7 +6,7 @@ theme: /
         q!: $regex</start>
         a: Начнём.
 
-    state: Hello
+    state: hello
         q!: $regex</hello>
         q!: * (привет/здравствуй*/~добрый (~утро/~вечер/~день/~ночь)) *
         a: привет
