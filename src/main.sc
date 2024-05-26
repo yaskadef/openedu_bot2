@@ -11,11 +11,11 @@ theme: /
         q!: * (привет/здравствуй*/~добрый (~утро/~вечер/~день/~ночь)) *
         a: привет
         
-    state: Weather
+    state: weather
         q!: $regex</weather>
         a: Норм погода
         
-    state: Сurrency
+    state: currency
         q!: $regex</currency>
         a: деньги стоят денег
         
