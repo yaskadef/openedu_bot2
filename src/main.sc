@@ -27,6 +27,10 @@ theme: /
         intent!: /пока
         a: Пока пока
 
+    state: CatchAll
+        q!:!: noMatch
+        a: Я не понял. Вы сказали: {{$request.query}}
+
     state: NoMatch2
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
