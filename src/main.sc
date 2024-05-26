@@ -7,14 +7,27 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!: /привет
-        a: Привет привет
+        q!: $regex</hello>
+        q!: * (привет/здравствуй*/~добрый (~утро/~вечер/~день/~ночь)) *
+        a: привет
+        
+    state: Weather
+        q!: $regex</weather>
+        a: Норм погода
+        
+    state: Сurrency
+        q!: $regex</currency>
+        a: деньги стоят денег
+        
+    state: NoMatch
+        q!: $regex</NoMatch>
+        a: Не соответствие!
 
     state: Bye
         intent!: /пока
         a: Пока пока
 
-    state: NoMatch
+    state: NoMatch2
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
 
