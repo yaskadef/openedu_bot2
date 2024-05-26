@@ -7,20 +7,20 @@ theme: /
         a: Начнём.
 
     state: hello
-        q!: $regex</hello>
+        q!: /hello
         q!: * (привет/здравствуй*/~добрый (~утро/~вечер/~день/~ночь)) *
         a: привет
         
     state: weather
-        q!: $regex</weather>
+        q!: /weather
         a: Норм погода
         
     state: currency
-        q!: $regex</currency>
+        q!: /currency
         a: деньги стоят денег
         
     state: NoMatch
-        q!: $regex</NoMatch>
+        q!: /NoMatch
         a: Не соответствие!
 
     state: Bye
